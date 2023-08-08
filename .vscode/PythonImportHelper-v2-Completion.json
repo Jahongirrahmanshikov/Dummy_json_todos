@@ -1,0 +1,29 @@
+[
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "bin.p",
+        "description": "bin.p",
+        "peekOfCode": "url = \"https://jahongir.jprq.live/api/v1/tasks\"\nresponse = requests.get(url)\nprint(response.json())\nprint(response.status_code)",
+        "detail": "bin.p",
+        "documentation": {}
+    },
+    {
+        "label": "response",
+        "kind": 5,
+        "importPath": "bin.p",
+        "description": "bin.p",
+        "peekOfCode": "response = requests.get(url)\nprint(response.json())\nprint(response.status_code)",
+        "detail": "bin.p",
+        "documentation": {}
+    }
+]
