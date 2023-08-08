@@ -1,3 +1,4 @@
+
 class TodoModel {
   List<User> todos;
   int total;
@@ -36,8 +37,8 @@ class User {
     required this.id,
     required this.todo,
     required this.completed,
-    required this.userId,
-  });
+    required this.userId, 
+});
 
   factory User.fromJson(Map<String, Object?> json) {
     return User(
@@ -52,4 +53,23 @@ class User {
   String toString() {
     return 'User(id: $id, todo: $todo, completed: $completed, userId: $userId)';
   }
+
+  Map<String, Object?> toMap() {
+    return <String, Object?>{
+      'id': id,
+      'todo': todo,
+      'completed': completed,
+      'userId': userId,
+    };
+  }
+
+  factory User.fromMap(Map<String, dynamic> map) {
+    return User(
+      id: map['id'] as int,
+      todo: map['todo'] as String,
+      completed: map['completed'] as bool,
+      userId: map['userId'] as int,
+    );
+  }
+
 }
